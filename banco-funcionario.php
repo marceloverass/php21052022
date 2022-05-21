@@ -77,8 +77,17 @@
 <?php
 } // fim do while
 }//fim do método listar
-?>
 
+	function alteraFuncionario($conecta, $funcionario) {
+		$sql = "update dados_pessoais set
+			nome='$funcionario->nome',
+			cpf='$funcionario->cpf',
+			endereco='$funcionario->telefone'
+		where id = $funcionario->id";
+    	$resultado= mysqli_query($conecta,$sql);
+    	return $resultado;	
+	} // fim do método alterar
+?>
  
  
  
