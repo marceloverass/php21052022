@@ -16,7 +16,7 @@
 	echo "CPF:  $funcionario->cpf <br>";
     echo "Endereço: $funcionario->endereco <br>";	
 	echo "Telefone: $funcionario->telefone <br>";	
-	echo "</center>";	
+	echo "</center>";
  }else{
 	 echo mysqli_error($conecta);
  }
