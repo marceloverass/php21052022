@@ -10,7 +10,7 @@
     $funcionario -> endereco = $_GET['endereco'];
     $funcionario -> telefone = $_GET['telefone'];
     if(alteraFuncionario($conecta, $funcionario)) {
-        echo "Alterado com sucesso";
+        header("Location:formListar.php");
     }   
     else {
         echo mysqli_error($conecta);

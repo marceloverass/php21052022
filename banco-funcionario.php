@@ -67,6 +67,12 @@
 			<center>
 				<input type="submit" value="Alterar">
 			</center>
+	    </td>
+		<tr>
+	    <td colspan=2>
+			<center>
+				<input type="submit" value="Deletar">
+			</center>
 	    </td>	
 	  </tr>
 	</table>
@@ -87,6 +93,7 @@
     	$resultado= mysqli_query($conecta,$sql);
     	return $resultado;	
 	} // fim do método alterar
+	function deletaFuncionario()
 ?>
  
  
